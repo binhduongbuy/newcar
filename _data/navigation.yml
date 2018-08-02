@@ -1,8 +1,8 @@
-- name: Cây Thuốc 
+- name: News 
   link: /
-- name: Giới thiệu
+- name: Introduce
   link: /about/
 - name: Receipts
   link: /recipes/
-- name: Liên hệ
+- name: Contact
   link: /contact/
