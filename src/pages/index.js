@@ -1,96 +1,130 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import {Box} from 'grid-styled';
-import styled from 'styled-components';
+import PropTypes from "prop-types";
+import React from "react";
 
-import {Text, P} from 'components/typography';
-import Section, {SectionTitle} from 'components/section';
+import { ThemeContext } from "../layouts";
+import Blog from "../components/Blog";
+import Hero from "../components/Hero";
+import Seo from "../components/Seo";
 
-import coverPhoto from './index-cover.png';
+class IndexPage extends React.Component {
+  separator = React.createRef();
 
-const PostDate = styled(Text)`
-  font-size: 0.8em;
-  display: block;
-`;
+  scrollToContent = e => {
+    this.separator.current.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
 
-const Index = ({data}) => {
-  const {edges: posts} = data.allMarkdownRemark;
-  const meta = data.site.siteMetadata;
-  return (
-    <div>
-      <main>
-        <Helmet title={meta.defaultTitle}>
-          <meta name="twitter:title" content={meta.defaultTitle} />
-          <meta name="twitter:description" content={meta.defaultDescription} />
-        </Helmet>
-        <Section pt={[20, 40]}>
-          <img
-            src={coverPhoto}
-            style={{width: '100%', marginBottom: 16}}
-            alt="San Franciso Bay"
-          />
-          <P>
-            <span role="img" aria-label="wave">
-              👋
-            </span>
-            <br />
-            I’m Alex, a UI engineer based in London. I work with startups and
-            agencies, straddling the line between design and code.
-          </P>
-          <P>
-            I have a particular focus on the internal role that UI engineering
-            plays, in regards to design systems, and creating tooling and
-            processes to help product teams scale. I’m currently working at
-            Kalo, leading the development of our internal design system.
-          </P>
-        </Section>
-        <Section>
-          <SectionTitle>Recent articles</SectionTitle>
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({node: post}) => (
-              <Box mb={2} key={post.frontmatter.title}>
-                <Text>
-                  <Link to={post.fields.slug} style={{textDecoration: 'none'}}>
-                    {post.frontmatter.title}
-                    <PostDate is="time" dateTime={post.fields.date}>
-                      {post.fields.date}
-                    </PostDate>
-                  </Link>
-                </Text>
-              </Box>
-            ))}
-        </Section>
-      </main>
-    </div>
-  );
+  render() {
+    const {
+      data: {
+        posts: { edges: posts = [] },
+        bgDesktop: {
+          resize: { src: desktop }
+        },
+        bgTablet: {
+          resize: { src: tablet }
+        },
+        bgMobile: {
+          resize: { src: mobile }
+        },
+        site: {
+          siteMetadata: { facebook }
+        }
+      }
+    } = this.props;
+
+    const backgrounds = {
+      desktop,
+      tablet,
+      mobile
+    };
+
+    return (
+      <React.Fragment>
+        <ThemeContext.Consumer>
+          {theme => (
+            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
+          )}
+        </ThemeContext.Consumer>
+
+        <hr ref={this.separator} />
+
+        <ThemeContext.Consumer>
+          {theme => <Blog posts={posts} theme={theme} />}
+        </ThemeContext.Consumer>
+
+        <Seo facebook={facebook} />
+
+        <style jsx>{`
+          hr {
+            margin: 0;
+            border: 0;
+          }
+        `}</style>
+      </React.Fragment>
+    );
+  }
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired
 };
 
-export default Index;
+export default IndexPage;
 
-export const pageQuery = graphql`
+//eslint-disable-next-line no-undef
+export const guery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        defaultTitle
-        defaultDescription
-      }
-    }
-    allMarkdownRemark(sort: {fields: [fields___date], order: DESC}) {
+    posts: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
+      sort: { fields: [fields___prefix], order: DESC }
+    ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
-          id
+          excerpt
           fields {
-            date(formatString: "MMMM DD, YYYY")
             slug
+            prefix
           }
           frontmatter {
             title
+            category
+            author
+            cover {
+              children {
+                ... on ImageSharp {
+                  sizes(maxWidth: 800, maxHeight: 360) {
+                    ...GatsbyImageSharpSizes_withWebp
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
+    site {
+      siteMetadata {
+        facebook {
+          appId
+        }
+      }
+    }
+    bgDesktop: imageSharp(id: { regex: "/hero-background/" }) {
+      resize(width: 1200, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    bgTablet: imageSharp(id: { regex: "/hero-background/" }) {
+      resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    bgMobile: imageSharp(id: { regex: "/hero-background/" }) {
+      resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
   }
 `;
+
+//hero-background
