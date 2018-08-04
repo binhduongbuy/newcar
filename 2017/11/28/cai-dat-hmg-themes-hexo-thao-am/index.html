@@ -1,0 +1,1599 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+  
+<head>
+
+  <!-- Custom Head -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-IDHERE",
+    enable_page_level_ads: true
+  });
+</script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106569306-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106569306-1');
+</script>
+
+
+
+  <meta charset="UTF-8">
+  <title>Cài đặt HMG Themes Hexo chạy trên GitHub Pages của Thảo Am - ĐồHôiNách</title>
+
+  <!-- Favicons -->
+  <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+  <link rel="icon" sizes="192x192" href="/img/favicon.png">
+  <link rel="apple-touch-icon" href="/img/favicon.png">
+
+  <!-- Google Fonts Modified -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <!-- Google Verify -->
+  <meta name="google-site-verification" content="Buf4GKZvN0DSILHYWKZlEPzYTuDmvzcPjeMRZlYypmY" />
+
+  <!-- Clickadu verify -->
+  <meta name="clckd" content="82c469c56d5cb510a9d40dd1fd301294" />
+
+  <!-- Meta & Info -->
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  
+    <meta name="theme-color" content="
+  
+  #3F51B5
+  
+
+">
+  
+
+  <meta name="author" content="DoHoiNach">
+  <meta name="description" content="DoHoiNach, an product of Bakadono">
+  <meta name="keywords" content="BinhDuongWorks, Bakadono">
+
+  <!--iOS -->
+  <meta name="apple-mobile-web-app-title" content="ĐồHôiNách">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="480">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- The Open Graph protocol -->
+  <meta property="og:url" content="http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/index.html">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="Cài đặt HMG Themes Hexo chạy trên GitHub Pages của Thảo Am - ĐồHôiNách | ĐồHôiNách">
+  <meta property="og:description" content="DoHoiNach, an product of Bakadono">
+
+  <!-- Cache -->
+  <meta http-equiv="Cache-Control" content="max-age=7200" />
+  <meta http-equiv="Expires" content="Fri, 29 Dec 2017 23:00:00 GMT" />
+
+  
+
+  <!-- Import CSS -->
+  
+    <link rel="stylesheet" href="/css/style-v20170507.min.css">
+  
+
+
+
+  
+    <style>
+      body {
+        background-color: #eeeeee;
+      }
+    </style>
+  
+</head>
+
+
+
+
+  <body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-blue  mdui-drawer-body-left  drawer-overlay-none" >
+
+<div id="top"></div>
+
+
+
+  <div class="mdui-appbar mdui-appbar-fixed" id="blog-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+      
+        <button class="mdui-btn mdui-btn-icon" back>
+          <i class="mdui-icon material-icons">&#xe5c4;</i>
+        </button>
+      
+      
+        <a href="/" class="mdui-typo-headline">
+          BinhDuongWorks
+        </a>
+        <span class="appbar-border-line mdui-hidden-xs"></span>
+      
+      <span class="mdui-typo-title mdui-hidden-xs toTop">
+        Cài đặt HMG Themes Hexo chạy trên GitHub Pages của Thảo Am
+      </span>
+      
+        <div class="search mdui-hidden-sm-down" onclick="window.open('/search', '_self');">
+          <div class="icon">
+            <i class="mdui-icon material-icons">&#xe8b6;</i>
+          </div>
+          <div class="text">
+            Tìm kiếm
+          </div>
+        </div>
+      
+      <div class="mdui-toolbar-spacer toTop"></div>
+      
+        <a href="/search" class="mdui-btn mdui-btn-icon mdui-hidden-md-up search-button" target="_self"><i class="mdui-icon material-icons">&#xe8b6;</i></a>
+      
+      <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#menu-index-more'}">
+        <i class="mdui-icon material-icons">&#xe417;</i>
+      </button>
+      <ul class="mdui-menu" id="menu-index-more">
+  
+    
+      <li class="mdui-menu-item" id="busuanzi_container_page_pv">
+        <a class="mdui-ripple menu-badge">
+          Lượt xem: 
+          <span class="badge" id="busuanzi_value_page_pv"></span>
+        </a>
+      </li>
+    
+  
+</ul>
+
+      <div class="appbar-userview mdui-valign" mdui-menu="{target: '#menu-userview', covered: false}">
+        <img class="mdui-img-circle appbar-userview-avatar mdui-center" src="/img/thaoam_avatar.png"/>
+      </div>
+      <div class="mdui-menu no-padding mdui-hidden-xs" id="menu-userview">
+  <div class="menu-userview-container">
+    <img class="mdui-img-circle menu-userview-avatar" src="/img/thaoam_avatar.png"/>
+    <div class="menu-userview-content">
+      <div class="mdui-typo-body-1">DoHoiNach</div>
+      <div class="mdui-typo-caption">はい、頑張ります</div>
+      <div class="flex-spacer"></div>
+      <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+
+
+
+
+<main>
+  <div class="mdui-card card-bottom-fix menu-fix mdui-hoverable" id="blog-post">
+  <div class="mdui-card-header posts-card-header">
+    <img class="mdui-card-header-avatar" src="/img/thaoam_avatar.png"/>
+    <div class="content mdui-valign">
+      <span class="username">DoHoiNach</span>
+      <div class="arrow mdui-text-center mdui-text-color-theme-accent">
+        <i class="mdui-icon material-icons">&#xe037;</i>
+      </div>
+      <div class="mdui-typo-body-1-opacity mdui-typo">
+        
+          
+            <a href="/categories/HMG/">
+              <span>HMG</span>
+            </a>
+          
+        
+      </div>
+    </div>
+    <div class="flex-spacer"></div>
+    <div class="mdui-valign">
+      <div class="mdui-typo-caption-opacity date">Th11 28, 2017</div>
+      <div class="buttons">
+        <!--<button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-menu="{target: '#menu-post-more'}">
+          <i class="mdui-icon material-icons">&#xe417;</i>
+        </button>-->
+        <!--<ul class="mdui-menu" id="menu-post-more">
+  nothing here
+</ul>-->
+
+        <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-menu="{target: '#menu-post-share'}">
+          <i class="mdui-icon material-icons">&#xe80d;</i>
+        </button>
+        <ul class="mdui-menu" id="menu-post-share">
+
+
+  <li class="mdui-menu-item">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/index.html" target="_blank" class="mdui-ripple">
+          Facebook
+      </a>
+  </li>
+
+
+
+  <li class="mdui-menu-item">
+      <a href="https://plus.google.com/share?url=http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/index.html" target="_blank" class="mdui-ripple">
+          Google+
+      </a>
+  </li>
+
+
+
+  <li class="mdui-menu-item">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/index.html&title=Cài đặt HMG Themes Hexo chạy trên GitHub Pages của Thảo Am" target="_blank" class="mdui-ripple">
+          Linkedin
+      </a>
+  </li>
+
+
+
+
+
+
+
+  <li class="mdui-menu-item">
+      <a href="https://twitter.com/intent/tweet?text=Cài đặt HMG Themes Hexo chạy trên GitHub Pages của Thảo Am&url=http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/index.html&via=DoHoiNach" target="_blank" class="mdui-ripple">
+          Twitter
+      </a>
+  </li>
+
+
+
+</ul>
+
+        
+        <button class="mdui-btn mdui-btn-icon mdui-float-right mdui-hidden-xs-down" mdui-menu="{target: '#menu-qrcode'}">
+          <i class="mdui-icon material-icons">&#xe337;</i>
+        </button>
+        <ul class="mdui-menu" id="menu-qrcode">
+  <li class="mdui-list-item" style="cursor: auto">
+    Article QR Code
+  </li>
+    <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC7ElEQVR42u3awXLbMAwEUP//TzfXXqzsEkoik0+njsdV8NiZIsDy9e/I54WNjY2NjY2NjY39SPYrft59/93b/v/kbSlvvvnuzWs1Y2NjY5/A/ua//rK466KvDz3/W3nN2NjY2Oewr5tWfhzXzSxpaUkDa2vGxsbGxp6MIknLyVsUNjY2NvZPNLDJJ0kze2jfxsbGxn4Yu1jQBI2qXd+348qv7tKwsbGxH89ug94n/PkP8m1sbGzsR7Lbpx0t5oundiH1thJsbGzsTdntODFfJ/3m1UxsbGzsc9jRr/JxZJuvnPLjmF/NxMbGxt6Vnb/o+iCuW12+EsobW3sZCBsbG3tX9l3LnUmckGPyYQkbGxv7HHY7GCQLnSSazWuYt0NsbGzsE9iTVrH2+WTIyVdg2NjY2Cewo1/iy9ggHzkWF/1LAQY2Njb23uyclxeaFL14+aZcPGFjY2OfwM6X9Wvrp/mIkrfY0SiCjY2N/YHs/EV5cW2I217fuaGBYWNjY2/HXrsik0S/yeG2wXMbBmNjY2OfwG5JUbAaxLFrEcVi2ICNjY29KTt/UVJcy06GkLZRFbs0bGxs7C3Ya/i1QWINnww8yT8GNjY29q7sfN2fh7JJcfmgMllIYWNjY5/Azlf8k+GkXVS1oW8UJ2NjY2Nvym5XOe2PvPdA2yUUNjY29gnsto21sWu7ALo3VMDGxsY+h51fbcxHi4SULJ7a475hqYSNjY39UexJa1lbHq2Fu3nMvBj0YmNjY38sO1/oT1paXnq+5LptqYSNjY29KXvSxq7HhnY4SY4yGq6wsbGxN2W/4qddDLURb9tQk/qxsbGxz2HPx5I2lC0aT/n9epeGjY2NvRE7HwzualrzOKEIg7GxsbGxB4WuBQBtwPBNbdjY2NjYQdF59Ls2ouQ//eZRBBsbG/tD2MlSKSkoXzCtBcn5NR1sbGzsc9ht0Lt2xSePASYH/YP5NjY2NvYj2ec82NjY2NjY2NjY2I95vgD4nCCCKuQsHAAAAABJRU5ErkJggg==" style="cursor: auto">
+</ul>
+
+        
+      </div>
+    </div>
+  </div>
+  <div class="posts-card-title">
+    Cài đặt HMG Themes Hexo chạy trên GitHub Pages của Thảo Am
+  </div>
+  
+    <div class="mdui-card-media">
+      <img src="https://c1.staticflickr.com/5/4265/34715593053_235059ed2f_n.jpg"/>
+    </div>
+  
+  <div class="posts-card-line">
+    <div class="mdui-divider"></div>
+  </div>
+  <div class="posts-card-content mdui-typo
+    null
+    
+  " id="post-content">
+
+  </center>
+
+    <script src="/assets/js/APlayer.min.js"> </script><p>Để cài đặt Hexo làm blog chạy trực tiếp trên hosting miễn phí Github thì chúng ta cần phải đảm bảo một vài yếu tố dưới đây trước.<br><strong>Phần mềm blog</strong> <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>.<br><strong>Tài liệu</strong> <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a>.<br><strong>Nếu có lỗi, tham khảo các vấn đề chính</strong> <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> hoặc viết các nội dung thông tin trên <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h1 id="Cac-cong-cu-chinh-Thao-Am-can"><a href="#Cac-cong-cu-chinh-Thao-Am-can" class="headerlink" title="Các công cụ chính Thảo Am cần"></a>Các công cụ chính Thảo Am cần</h1><h2 id="Cai-dat-Install-Git"><a href="#Cai-dat-Install-Git" class="headerlink" title="Cài đặt Install Git"></a>Cài đặt Install Git</h2><p>Windows: Download &amp; install <a href="https://git-scm.com/download/win" target="_blank" rel="external">Git</a>. + <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a><br>Đối với Windows bạn <strong>nên chọn phiên bản install cho phù hợp</strong> và dễ thao tác nhanh hơn là tải source phần mềm trên về.<br>Mac: Install it with <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="external">Homebrew</a>, <a href="http://www.macports.org/" target="_blank" rel="external">MacPorts</a> or <a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">installer</a>.<br>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code><br>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code></p>
+<p><strong>Trường hợp đặc biệt</strong><br>Bạn có thể cài đặt <strong>Install Node.js</strong> bằng cách mới không cần cài đặt đó là sử dụng <a href="https://github.com/creationix/nvm" target="_blank" rel="external">Node Version Manager</a><br>Dù sao đối với những bạn không chuyên về phần mềm nên chọn bản Installer thì hơn, còn đối với người chuyên thì dùng NVM sẽ tốt hơn.<br>Chọn <strong>1 trong 2 cách</strong> sau nhé bạn:</p>
+<p><strong>cURL:</strong><br><code>$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</code></p>
+<p><strong>Wget</strong><br><code>$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</code></p>
+<p>Khi mà <strong>NVM</strong> cài đặt xong, khởi động lại tác vụ và chạy dòng lệnh (sử dụng <strong>CMD.exe</strong> nhé) sau để bắt đầu cài đặt <strong>Node.js</strong><br>Lưu ý là <strong>chỉ chọn 1 trong 2 cách sau đây</strong> nhé:</p>
+<p><strong>Cách 1</strong></p>
+<p><code>nvm install 4</code></p>
+<p><strong>Cách 2</strong><br><code>nvm install stable</code></p>
+<p>Cài đặt xong xuôi các hướng dẫn nêu trên, <strong>đồng nghĩa với việc máy tính bạn đã sẵn sàng để tiến đến bước kế tiếp.</strong><br>Tuy hơi phức tạp tí nhưng mà Hexo nó đáp ứng tốt nhiều nhu cầu, đảm bảo tốt nhiều công việc và hiệu quả nhất là túi tiền. Những ưu điểm và nhược điểm thì các bạn kéo xuống dưới xem đánh giá nhé.</p>
+<h2 id="Cai-Dat-Hexo-Install-Hexo"><a href="#Cai-Dat-Hexo-Install-Hexo" class="headerlink" title="Cài Đặt Hexo (Install Hexo)"></a>Cài Đặt Hexo (Install Hexo)</h2><p>Mở <strong>CMD</strong> lên, nếu máy tính bạn chỉ có ổ <strong>C</strong> thôi thì thao tác luôn dòng lệnh này Gõ luôn dòng lệnh này vào <strong>CMD</strong> nhé.<br>Nếu có nhiều hơn 1 ổ đĩa, ví dụ: <strong>D: ; E: ; F: ;</strong> … vân vân thì bạm gõ <strong>D:</strong> hoặc <strong>E:</strong> hoặc <strong>F:</strong> tùy tên tương ứng ổ đĩa để <strong>CMD</strong> nhảy sang ổ đĩa đó. Bằng các dòng lệnh này <code>mkdir Tên_thư_mục</code> hoặc <code>md Tên_thư_mục</code> chọn 1 trong 2 cách thôi nhé, sau đó <code>cd Tên_thư_mục</code> để vào thư mục đã tạo trước khi bắt đầu bằng dòng lệnh dưới và máy cài Hexo vào đó.</p>
+<p><code>npm install -g hexo-cli</code></p>
+<p>Sau khi đã hoàn tất việc tải về Hexo trên, bạn tiếp tục bước cài đặt Hexo vào thư mục nào đó trên đĩa.</p>
+<p>Cài đặt Hexo vào thư mục cài đặt <code>&lt;folder&gt;</code> ở đây có tên bất kỳ do bạn đặt, ví dụ Thảo Am cài đặt Hexo trên ổ đĩa <strong>D:</strong>, và thư mục cài là <strong>TABlogSystems</strong>, vậy là ta suy ra ngay Thảo Am đã thay <code>&lt;folder&gt;</code> bằng  <strong>TABlogSystems</strong>,.</p>
+<pre><code>hexo init &lt;folder&gt;
+cd &lt;folder&gt;
+npm install
+</code></pre><p>Hoàn tất việc cài đặt các bạn vào thư mục vừa xuất <strong>Hexo</strong> ra đó kiểm tra xem cấu trúc có giống thế này không là được.</p>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+</code></pre><h2 id="Chay-thu-de-kiem-tra-Hexo-da-chay"><a href="#Chay-thu-de-kiem-tra-Hexo-da-chay" class="headerlink" title="Chạy thử để kiểm tra Hexo đã chạy"></a>Chạy thử để kiểm tra Hexo đã chạy</h2><p>Vẫn tại <strong>CMD</strong> bạn chạy dòng lệnh này.<br><code>$ hexo server</code></p>
+<p>Tiếp đến thì bạn gõ cái địa chỉ liên kết này vào trình duyệt để Test thử Hexo mặc định chạy chưa: <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<h1 id="Cai-dat-theme-HMG-cua-Thao-Am"><a href="#Cai-dat-theme-HMG-cua-Thao-Am" class="headerlink" title="Cài đặt theme HMG của Thảo Am"></a>Cài đặt theme HMG của Thảo Am</h1><p>Các bạn <strong>xuantiep.pham@gmail.com</strong> liên hệ email này để lấy Themes đã Nâng cấp mới nhé.<br>Hoặc comment bên dưới Email của bạn để nhận theme.</p>
+<p>Sau khi có tập tin nén .zip của theme mới nhất, các bạn giải nén và copy vào thư mục <strong>themes</strong> của <strong>Hexo</strong>.<br>Bạn có thể đổi tên của thư mục theme vừa tải về, vấn đề là phải chính sửa cho khớp ở <strong>_config.yml</strong> của <strong>Hexo</strong><br>đảm bảo file <strong>_config.yml</strong> có dòng này nhé <code>theme: tên_thư_mục_theme</code></p>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h2 id="Kich-hoat-Theme"><a href="#Kich-hoat-Theme" class="headerlink" title="Kích hoạt Theme"></a>Kích hoạt Theme</h2><p>Chạy dòng lệnh dưới vào <strong>CMD</strong> để cài đặt <strong>prismjs</strong> vào <strong>Hexo</strong> để kiểm soát lỗi.</p>
+<p><code>npm install prismjs --save</code></p>
+<p>Sau đó, kiểm tra file <strong>_config.yml</strong> của <strong>Hexo</strong> nó phải đáp ứng điều kiện này</p>
+<pre class="line-numbers language-highlight:"><code class="language-highlight:">  enable: false
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Chạy dòng lệnh <code>hexo s --debug</code> vào <strong>CMD</strong>, rồi mở tiếp <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> để kiểm tra xem có lỗi không.<br>Nếu có lỗi thì bạn thành công rồi, bởi vì Theme này cần thêm ứng dụng để chạy hoàn chỉnh vì thế đừng lo nghĩ gì cả, cứ tiếp tục các bước dưới đây.</p>
+<h2 id="Khoi-tao-cac-Plugin-di-kem"><a href="#Khoi-tao-cac-Plugin-di-kem" class="headerlink" title="Khởi tạo các Plugin đi kèm"></a>Khởi tạo các Plugin đi kèm</h2><h3 id="Cai-dat-Search"><a href="#Cai-dat-Search" class="headerlink" title="Cài đặt Search"></a>Cài đặt Search</h3><p>Bạn cài đặt <strong>hexo-generator-search</strong> để Theme kích hoạt chức năng tìm kiếm nhanh. Gõ dòng lệnh sau:</p>
+<p><code>npm install hexo-generator-search --save</code></p>
+<h3 id="Cai-dat-Comment-Disqus"><a href="#Cai-dat-Comment-Disqus" class="headerlink" title="Cài đặt Comment Disqus"></a>Cài đặt Comment Disqus</h3><p>Bạn mở file <strong>_config.yml</strong> trong <strong>Themes</strong> ra.</p>
+<pre><code>comment:
+    use: disqus
+    shortname: ten_user_cua_ban
+</code></pre><p>Nhớ, thay <strong>ten_user_cua_ban</strong> bằng user bạn đăng ký ở <a href="https://disqus.com/" target="_blank" rel="external">Disqus</a>.</p>
+<h3 id="Cai-dat-RSS"><a href="#Cai-dat-RSS" class="headerlink" title="Cài đặt RSS"></a>Cài đặt RSS</h3><p>ở trong <strong>CMD</strong> bạn gõ dòng lệnh sau để cài <strong>hexo-generator-feed</strong> giúp tạo RSS cho Hexo.</p>
+<p><code>npm install hexo-generator-feed --save</code></p>
+<p>Muốn tìm hiểu thêm thì vào link này <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">https://github.com/hexojs/hexo-generator-feed</a></p>
+<h3 id="Cai-dat-QR-CODE"><a href="#Cai-dat-QR-CODE" class="headerlink" title="Cài đặt QR_CODE"></a>Cài đặt QR_CODE</h3><p>QR Code dành cho cả trang lẫn bài viết, Có 2 lựa chọn <strong>true</strong> và <strong>false</strong>, cần cài <strong>hexo-helper-qrcode</strong> plugin để sử dụng chức năng này.<br>Chạy dòng lệnh này ở <strong>CMD</strong> trong thư mục <strong>Hexo</strong></p>
+<p><code>npm install hexo-helper-qrcode --save</code></p>
+<h1 id="Day-len-GitHub-Page"><a href="#Day-len-GitHub-Page" class="headerlink" title="Đẩy lên GitHub Page"></a>Đẩy lên GitHub Page</h1><h2 id="Cai-dat"><a href="#Cai-dat" class="headerlink" title="Cài đặt"></a>Cài đặt</h2><p>Mở file <strong>_config.yml</strong> trong <strong>Hexo</strong>.<br>Chú ý: <strong>{your github repo url}</strong> chính là đường dẫn Repo mà bạn tạo ở GitGub, ví dụ <strong><a href="https://github.com/abcxyz/abcxyz.github.io" target="_blank" rel="external">https://github.com/abcxyz/abcxyz.github.io</a></strong><br>Trong đó <strong>abcxyz</strong> là <strong>user</strong> của bạn ở <strong>GitHub</strong>. Còn <strong>abcxyz.github.io</strong> chính là <strong>user của bạn + với github.io</strong></p>
+<p>thêm dòng lệnh này vào file <strong>_config.yml</strong> của <strong>Hexo</strong> nhé.</p>
+<pre><code>deploy:
+  type: git
+  repo: {your github repo url}
+  branch: master
+  message: &quot;Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}&quot;
+</code></pre><h2 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><p>Chạy 2 dòng lệnh này trong <strong>CMD</strong></p>
+<p><code>npm i -S hexo-deployer-git</code><br><code>hexo deploy</code></p>
+<p>Đến bước này rồi thì Blog của bạn đã host miễn phí ở Github rồi theo địa chỉ tương tự <strong>abcxyz.github.io</strong> bạn đã tạo.</p>
+
+
+  </div>
+
+  
+    <div class="posts-card-actions">
+      
+        <button class="mdui-btn mdui-btn-icon mdui-color-red mdui-ripple mdui-center mdui-btn-dense" mdui-tooltip="{content: 'Mua sản phẩm ủng hộ?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}"><i class="mdui-icon fa fa-beer mdui-text-center"></i></button>
+      
+      <div class="flex-spacer"></div>
+      
+        <div class="mdui-chip">
+          <span class="mdui-chip-icon"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
+        </div>
+        <div class="content mdui-typo">
+          
+            <a href="/tags/Hexo/">
+              <span>Hexo</span>
+            </a>
+          
+        </div>
+      
+    </div>
+  
+  
+    
+      <div class="posts-card-line">
+        <div class="mdui-divider"></div>
+      </div>
+      <div class="post-comment">
+        
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = 'http://dohoinach.com/2017/11/28/cai-dat-hmg-themes-hexo-thao-am/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//thao-am.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+      </div>
+    
+  
+</div>
+<div id="card-toc">
+  <ul class="mdui-list post-toc"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cac-cong-cu-chinh-Thao-Am-can"><span class="post-toc-number">1.<span class="post-toc-text">Các công cụ chính Thảo Am cần</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat-Install-Git"><span class="post-toc-number">1.1.<span class="post-toc-text">Cài đặt Install Git</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-Dat-Hexo-Install-Hexo"><span class="post-toc-number">1.2.<span class="post-toc-text">Cài Đặt Hexo (Install Hexo)</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Chay-thu-de-kiem-tra-Hexo-da-chay"><span class="post-toc-number">1.3.<span class="post-toc-text">Chạy thử để kiểm tra Hexo đã chạy</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat-theme-HMG-cua-Thao-Am"><span class="post-toc-number">2.<span class="post-toc-text">Cài đặt theme HMG của Thảo Am</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Kich-hoat-Theme"><span class="post-toc-number">2.1.<span class="post-toc-text">Kích hoạt Theme</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Khoi-tao-cac-Plugin-di-kem"><span class="post-toc-number">2.2.<span class="post-toc-text">Khởi tạo các Plugin đi kèm</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat-Search"><span class="post-toc-number">2.2.1.<span class="post-toc-text">Cài đặt Search</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat-Comment-Disqus"><span class="post-toc-number">2.2.2.<span class="post-toc-text">Cài đặt Comment Disqus</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat-RSS"><span class="post-toc-number">2.2.3.<span class="post-toc-text">Cài đặt RSS</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat-QR-CODE"><span class="post-toc-number">2.2.4.<span class="post-toc-text">Cài đặt QR_CODE</span></span></a></a></ul></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Day-len-GitHub-Page"><span class="post-toc-number">3.<span class="post-toc-text">Đẩy lên GitHub Page</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Cai-dat"><span class="post-toc-number">3.1.<span class="post-toc-text">Cài đặt</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Deploy"><span class="post-toc-number">3.2.<span class="post-toc-text">Deploy</span></span></a></a></ul></a></ul>
+</div>
+<div style="margin: 0 16px 16px 16px;height: 36px;">
+  
+  <a href="/2017/11/28/cam-nang-lam-vuon-rau-rieng-gia-dinh/" class="mdui-btn mdui-btn-icon mdui-color-theme-accent mdui-ripple mdui-btn-raised mdui-float-left" mdui-tooltip="{content: 'Bài viết mới', position: 'right'}">
+    <i class="mdui-icon material-icons">&#xe5cb;</i>
+  </a>
+
+
+  <a href="/2017/11/28/cai-dat-gatsby-va-push-github-netlify/" class="mdui-btn mdui-btn-icon mdui-color-theme-accent mdui-ripple mdui-btn-raised mdui-float-right" mdui-tooltip="{content: 'Bài viết cũ', position: 'left'}">
+    <i class="mdui-icon material-icons">&#xe5cc;</i>
+  </a>
+
+
+</div>
+<button id="button-toc" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-hidden-sm-up" style="z-index: 9;" mdui-menu="{target: '#menu-toc', fixed: true}">
+  <i class="mdui-icon material-icons">&#xe242;</i>
+</button>
+<ul class="mdui-menu mdui-typo no-margin-bottom auto-width" id="menu-toc" style="padding: 8px;height: 80%">
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Cac-cong-cu-chinh-Thao-Am-can"><span class="toc-text">Các công cụ chính Thảo Am cần</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cai-dat-Install-Git"><span class="toc-text">Cài đặt Install Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cai-Dat-Hexo-Install-Hexo"><span class="toc-text">Cài Đặt Hexo (Install Hexo)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chay-thu-de-kiem-tra-Hexo-da-chay"><span class="toc-text">Chạy thử để kiểm tra Hexo đã chạy</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Cai-dat-theme-HMG-cua-Thao-Am"><span class="toc-text">Cài đặt theme HMG của Thảo Am</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Kich-hoat-Theme"><span class="toc-text">Kích hoạt Theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Khoi-tao-cac-Plugin-di-kem"><span class="toc-text">Khởi tạo các Plugin đi kèm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Cai-dat-Search"><span class="toc-text">Cài đặt Search</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cai-dat-Comment-Disqus"><span class="toc-text">Cài đặt Comment Disqus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cai-dat-RSS"><span class="toc-text">Cài đặt RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cai-dat-QR-CODE"><span class="toc-text">Cài đặt QR_CODE</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Day-len-GitHub-Page"><span class="toc-text">Đẩy lên GitHub Page</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cai-dat"><span class="toc-text">Cài đặt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deploy"><span class="toc-text">Deploy</span></a></li></ol></li></ol>
+</ul>
+
+
+<a href="#top" id="toTop"></a>
+
+</main>
+
+
+  <div class="mdui-drawer drawer-container " id="drawer">
+  <div class="drawer-head mdui-valign mdui-hidden-md-up">
+    <div class="mdui-typo-title-opacity">BinhDuongWorks</div>
+    <div class="flex-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer-close><i class="mdui-icon material-icons">&#xe314;</i></button>
+  </div>
+  <div class="mdui-divider"></div>
+  <div class="drawer-content">
+    
+      <div class="mdui-list no-padding-bottom">
+        <a href="/">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+            <div class="mdui-list-item-content">
+              Trang chính
+            </div>
+          </li>
+        </a>
+      </div>
+    
+    
+      <div class="mdui-list no-padding">
+        <a href="/archives">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+            <div class="mdui-list-item-content">
+              Lưu trữ
+              <span class="badge new mdui-color-theme-accent" data-badge-caption="">97</span>
+            </div>
+          </li>
+        </a>
+      </div>
+    
+    
+      <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
+            <div class="mdui-list-item-content">Thư mục</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/categories/NoteBook/" class="mdui-list-item mdui-ripple" style="display: flex">
+                NoteBook
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">20</span>
+              </a>
+            
+              <a href="/categories/Agriculture/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Agriculture
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">23</span>
+              </a>
+            
+              <a href="/categories/Resources/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Resources
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">24</span>
+              </a>
+            
+              <a href="/categories/Business/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Business
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/categories/TMB/" class="mdui-list-item mdui-ripple" style="display: flex">
+                TMB
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/HMG/" class="mdui-list-item mdui-ripple" style="display: flex">
+                HMG
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Wordpress/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Wordpress
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">9</span>
+              </a>
+            
+              <a href="/categories/Hosting/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Hosting
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Study/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Study
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/categories/Favourite/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Favourite
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">8</span>
+              </a>
+            
+              <a href="/categories/Anime/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Anime
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/categories/Hexo/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+          </div>
+        </div>
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+            <div class="mdui-list-item-content">Thẻ</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+              <a href="/tags/Note/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Note
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">19</span>
+              </a>
+            
+              <a href="/tags/Book/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Book
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">19</span>
+              </a>
+            
+              <a href="/tags/becomeRich/" class="mdui-list-item mdui-ripple" style="display: flex">
+                becomeRich
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">13</span>
+              </a>
+            
+              <a href="/tags/Plant/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Plant
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">13</span>
+              </a>
+            
+              <a href="/tags/Rau/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Rau
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">7</span>
+              </a>
+            
+              <a href="/tags/Bakadono/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Bakadono
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Website/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Website
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/tags/Build/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Build
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Haboba/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Haboba
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Thaoam/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Thaoam
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/nihondream/" class="mdui-list-item mdui-ripple" style="display: flex">
+                nihondream
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Land/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Land
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Sell/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Sell
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Cui/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Cui
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Gas/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Gas
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/tags/Price/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Price
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Binhduong/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Binhduong
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/tags/WoodStove/" class="mdui-list-item mdui-ripple" style="display: flex">
+                WoodStove
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Stove/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Stove
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Wood/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Wood
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Leaf/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Leaf
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/Root/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Root
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/Gatsby/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Gatsby
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/tags/GitHub/" class="mdui-list-item mdui-ripple" style="display: flex">
+                GitHub
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Netlify/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Netlify
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Tro/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Tro
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+              </a>
+            
+              <a href="/tags/XaLach/" class="mdui-list-item mdui-ripple" style="display: flex">
+                XaLach
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Lettuce/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Lettuce
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Vegetable/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Vegetable
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Hexo/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Hexo
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/Free/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Free
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">9</span>
+              </a>
+            
+              <a href="/tags/Agribank/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Agribank
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Tanuyen/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Tanuyen
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Theme/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Theme
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">10</span>
+              </a>
+            
+              <a href="/tags/Source/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Source
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Online/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Online
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Storage/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Storage
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Sharing/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Sharing
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/FeedStuffs/" class="mdui-list-item mdui-ripple" style="display: flex">
+                FeedStuffs
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/AnimalFeed/" class="mdui-list-item mdui-ripple" style="display: flex">
+                AnimalFeed
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Premix/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Premix
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/FeedMill/" class="mdui-list-item mdui-ripple" style="display: flex">
+                FeedMill
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/ThinkDifferent/" class="mdui-list-item mdui-ripple" style="display: flex">
+                ThinkDifferent
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+              </a>
+            
+              <a href="/tags/Banks/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Banks
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/DNS/" class="mdui-list-item mdui-ripple" style="display: flex">
+                DNS
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Public/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Public
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Japan/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Japan
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">6</span>
+              </a>
+            
+              <a href="/tags/Student/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Student
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/StudyJapan/" class="mdui-list-item mdui-ripple" style="display: flex">
+                StudyJapan
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/DiemTua/" class="mdui-list-item mdui-ripple" style="display: flex">
+                DiemTua
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Family/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Family
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">5</span>
+              </a>
+            
+              <a href="/tags/Home/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Home
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Jidaigeki/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Jidaigeki
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Movies/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Movies
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/India/" class="mdui-list-item mdui-ripple" style="display: flex">
+                India
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Official/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Official
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Town/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Town
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Kali/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Kali
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/tags/Money/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Money
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
+              </a>
+            
+              <a href="/tags/Art/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Art
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/TShirt/" class="mdui-list-item mdui-ripple" style="display: flex">
+                TShirt
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Saving/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Saving
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">4</span>
+              </a>
+            
+              <a href="/tags/KhongTu/" class="mdui-list-item mdui-ripple" style="display: flex">
+                KhongTu
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Markdown/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Markdown
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Qiita/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Qiita
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Kobito/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Kobito
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Wordpress/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Wordpress
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/SSH/" class="mdui-list-item mdui-ripple" style="display: flex">
+                SSH
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Lover/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Lover
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Ihororlovskyi/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Ihororlovskyi
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Water/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Water
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/MiyamotoMusashi/" class="mdui-list-item mdui-ripple" style="display: flex">
+                MiyamotoMusashi
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/GoRinnoSho/" class="mdui-list-item mdui-ripple" style="display: flex">
+                GoRinnoSho
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Cart/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Cart
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Opensource/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Opensource
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Jekyll/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Jekyll
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Organic/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Organic
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Smart/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Smart
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Anime/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Anime
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Youtube/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Youtube
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/NationalGeographic/" class="mdui-list-item mdui-ripple" style="display: flex">
+                NationalGeographic
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Katana/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Katana
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Domain/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Domain
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Register/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Register
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Tranfer/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Tranfer
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Renew/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Renew
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/1And1/" class="mdui-list-item mdui-ripple" style="display: flex">
+                1And1
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Favourite/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Favourite
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Foods/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Foods
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/Kitchen/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Kitchen
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+              <a href="/tags/English/" class="mdui-list-item mdui-ripple" style="display: flex">
+                English
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Vietnamese/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Vietnamese
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Nippon/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Nippon
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Introduction/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Introduction
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Mangosteen/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Mangosteen
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Mangcut/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Mangcut
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Silver/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Silver
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Cooking/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Cooking
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Software/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Software
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Engineering/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Engineering
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Blogs/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Blogs
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/ReAct/" class="mdui-list-item mdui-ripple" style="display: flex">
+                ReAct
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Assets/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Assets
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/TroBep/" class="mdui-list-item mdui-ripple" style="display: flex">
+                TroBep
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Windows/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Windows
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/NortonGhost/" class="mdui-list-item mdui-ripple" style="display: flex">
+                NortonGhost
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Boot/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Boot
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Loans/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Loans
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/CPC/" class="mdui-list-item mdui-ripple" style="display: flex">
+                CPC
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/CPM/" class="mdui-list-item mdui-ripple" style="display: flex">
+                CPM
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Advertising/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Advertising
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Garlic/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Garlic
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/WhiteVinegar/" class="mdui-list-item mdui-ripple" style="display: flex">
+                WhiteVinegar
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/VietnameseFood/" class="mdui-list-item mdui-ripple" style="display: flex">
+                VietnameseFood
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Pumpkin/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Pumpkin
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+              </a>
+            
+              <a href="/tags/Trunque/" class="mdui-list-item mdui-ripple" style="display: flex">
+                Trunque
+                <div style="flex-grow: 1;"></div>
+                <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+              </a>
+            
+          </div>
+        </div>
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+            <div class="mdui-list-item-content">Sự kiện</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+            
+              <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+                2017
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="mdui-divider"></div>
+      <div class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
+        
+          
+            <div class="mdui-collapse-item">
+              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                
+                  <i class="mdui-list-item-icon mdui-icon fa fa-ravelry mdui-text-center"></i>
+                
+                
+                
+                <div class="mdui-list-item-content">Sản phẩm</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+              </div>
+              <div class="mdui-collapse-item-body mdui-list">
+                
+                  <a href="http://bakadono.com" class="mdui-list-item mdui-ripple" target="_blank">
+                    Bakadono
+                  </a>
+                
+                  <a href="http://haboba.com" class="mdui-list-item mdui-ripple" target="_blank">
+                    Haboba Jobs
+                  </a>
+                
+                  <a href="https://thaoam.com" class="mdui-list-item mdui-ripple" target="_blank">
+                    Thảo Am
+                  </a>
+                
+                  <a href="/adsense" class="mdui-list-item mdui-ripple" target="_blank">
+                    Tài khoản AdSense
+                  </a>
+                
+              </div>
+            </div>
+          
+        
+          
+            <a href="/friends" target="_blank">
+              <li class="mdui-list-item mdui-ripple">
+                
+                
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0ba;</i>
+                
+                
+                <div class="mdui-list-item-content">Tài trợ &amp; Bạn bè</div>
+              </li>
+            </a>
+          
+        
+          
+            <a href="/asinice" target="_blank">
+              <li class="mdui-list-item mdui-ripple">
+                
+                
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xE3A2;</i>
+                
+                
+                <div class="mdui-list-item-content">Báo giá Asinice</div>
+              </li>
+            </a>
+          
+        
+          
+            <a href="/entertainment" target="_blank">
+              <li class="mdui-list-item mdui-ripple">
+                
+                
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xE310;</i>
+                
+                
+                <div class="mdui-list-item-content">Giải trí</div>
+              </li>
+            </a>
+          
+        
+          
+            <a href="/about" target="_blank">
+              <li class="mdui-list-item mdui-ripple">
+                
+                  <i class="mdui-list-item-icon mdui-icon fa fa-child mdui-text-center"></i>
+                
+                
+                
+                <div class="mdui-list-item-content">Giới thiệu</div>
+              </li>
+            </a>
+          
+        
+          
+            <a href="/contact" target="_blank">
+              <li class="mdui-list-item mdui-ripple">
+                
+                
+                  <i class="mdui-list-item-icon mdui-icon material-icons">textsms</i>
+                
+                
+                <div class="mdui-list-item-content">Liên hệ</div>
+              </li>
+            </a>
+          
+        
+      </div>
+    
+  </div>
+  <div class="drawer-footer">
+    <div class="mdui-typo mdui-typo-caption-opacity">
+      Bản quyền ©  <a href="https://thaoam.com"><strong>Thảo Am</strong></a>
+      <br />
+      Build - <strong>HMG</strong></a>
+      <br />
+      Sponsor - <strong>Google Adsense</strong></a>
+      <br />
+      <script type="text/javascript">
+        copyright = new Date();
+        update = copyright.getFullYear();
+        document.write("© <strong>" + update + " DoHoiNach</strong>");
+      </script>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div id="outdated" style="z-index: 9999;">
+  <h6>Your browser is out-of-date!</h6>
+  <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+
+  <div class="mdui-dialog" id="donateDialog">
+    <div class="mdui-dialog-title">Mua sản phẩm ủng hộ?</div>
+    <div class="mdui-dialog-content no-padding-bottom">
+      <div class="mdui-list">
+        
+          <a href="/adsense" title="Mua Tài khoản AdSense" class="mdui-list-item mdui-ripple" target="_blank">
+            
+              <i class="mdui-list-item-icon mdui-icon fa fa-google mdui-text-center"></i>&emsp;
+            
+            
+            
+            Mua Tài khoản AdSense
+          </a>
+        
+          <a href="/payments" title="Phương thức thanh toán &amp; Ủng hộ" class="mdui-list-item mdui-ripple" target="_blank">
+            
+              <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+            
+            
+            
+            Phương thức thanh toán &amp; Ủng hộ
+          </a>
+        
+      </div>
+    </div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple" mdui-dialog-close>Đóng lại</button>
+    </div>
+  </div>
+
+
+<div class="mdui-dialog" id="contactDialog">
+  <div class="mdui-dialog-title">
+    How to contact me
+  </div>
+  <div class="mdui-dialog-content no-padding-bottom">
+    <div class="mdui-list">
+      
+        <a href="https://twitter.com/thaoamtanuyen" title="Twitter" class="mdui-list-item mdui-ripple" target="_blank">
+          
+            <i class="mdui-list-item-icon mdui-icon fa fa-twitter mdui-text-center"></i>&emsp;
+          
+          
+          
+          Twitter
+        </a>
+      
+        <a href="https://facebook.com/thaoamtanuyen" title="Facebook" class="mdui-list-item mdui-ripple" target="_blank">
+          
+            <i class="mdui-list-item-icon mdui-icon fa fa-facebook mdui-text-center"></i>&emsp;
+          
+          
+          
+          Facebook
+        </a>
+      
+        <a href="cal:01628709574" title="0162 870 9574" class="mdui-list-item mdui-ripple" target="_blank">
+          
+          
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>&emsp;
+          
+          
+          0162 870 9574
+        </a>
+      
+        <a href="xuantiep.pham@gmail.com" title="xuantiep.pham@gmail.com" class="mdui-list-item mdui-ripple" target="_blank">
+          
+          
+          
+          xuantiep.pham@gmail.com
+        </a>
+      
+    </div>
+  </div>
+  <div class="mdui-dialog-actions">
+    <button class="mdui-btn mdui-ripple" mdui-dialog-close>
+      Close
+    </button>
+  </div>
+</div>
+
+<!-- Import JS -->
+
+  <script src="/js/outdatedbrowser.min.js"></script>
+
+
+<script>
+//event listener: DOM ready
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+      window.onload = func;
+  } else {
+      window.onload = function() {
+          if (oldonload) {
+              oldonload();
+          }
+          func();
+      }
+  }
+}
+//call plugin function after DOM ready
+addLoadEvent(function(){
+  outdatedBrowser({
+      bgColor: '#f25648',
+      color: '#ffffff',
+      lowerThan: 'transform',
+      languagePath: ''
+  })
+});
+</script>
+
+
+  <script src="/js/js-v20170507.min.js"></script>
+
+
+
+
+
+
+
+  <script src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("load",function(){
+        function doWork(){
+            listens.forEach(function(value,index){
+                value[1]();
+                value[0].classList.remove("mdui-list-item-active");
+            })
+            let actionToc = (listens[listens.reduce(function(r,v,index){
+                if(v[2] == true){
+                    return index;
+                }
+                else return r;
+            },undefined)] || [])[0] || listens[0][0];
+            actionToc.classList.add("mdui-list-item-active");
+            showToc(actionToc);
+        }
+        function showToc(toc) {
+            let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+            let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+            let offset = 0;
+            if (offsetTop < 0)offset = offsetTop;
+            if (offsetBottom > 0)offset = offsetBottom;
+            cardToc.scrollTop += offset;
+        }
+        var listens = [];
+        var cardToc = document.querySelector('#card-toc');
+        var links = document.querySelectorAll("a.post-toc-link");
+        Array.prototype.forEach.call(links,function(value,index){
+            var id = (value.getAttribute("href") || "#").slice(1);
+            var element = document.getElementById(id);
+            listens.push([value,function(){
+                var readed = false;
+                var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+                if ($$(element).offset().top <= scrollTop + $$(element).height() + 64) {
+                    readed = true;
+                } else {
+                    readed = false;
+                }
+                listens[index][2] = readed;
+            },false])
+        })
+        doWork();
+        window.addEventListener("scroll",doWork)
+    });
+    $$('#post-content img').on('click', function () {
+      $$('#drawer').css('z-index', '1000');
+      var img_src = $$(this).attr('src');
+      var img_alt = $$(this).attr('alt');
+      lightGallery(this, {
+        dynamic: true,
+        counter: false,
+        dynamicEl: [{
+          "src": img_src,
+          'subHtml': "<span author>DoHoiNach</span> • Public<div descr>" + img_alt + "</div>"
+          }],
+      });
+    });
+  </script>
+
+  
+
+
+
+
+
+
+
+
+
+
+<!-- Custom javascript -->
+
+
+
+</body>
+
+</html>
