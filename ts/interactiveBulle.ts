@@ -1,4 +1,0 @@
-///////////// interactiveBulle.js
-"use strict";
-
-

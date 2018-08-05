@@ -1,0 +1,72 @@
+  #blog img {
+    max-width:  100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-img {
+    max-width:  100%;
+  }
+
+  .blog-date {
+    margin: 10px 0;
+    display: flex;
+  }
+
+  .blog-date > div:nth-child(2){
+    margin-left: 14px;
+  }
+
+  .blog-title {
+    margin: 0;
+  }
+
+  .blog-title:hover{
+    color: #0B71BC;
+  }
+
+  .blog-button {
+    margin-top: 35px;
+  }
+
+  .blog-button > a > button {
+    -moz-box-shadow: 0px 10px 14px -7px #22699c;
+    -webkit-box-shadow: 0px 10px 14px -7px #22699c;
+    box-shadow: 0px 10px 14px -7px #22699c;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0b72bc), color-stop(1, #032c4a));
+    background:-moz-linear-gradient(top, #0b72bc 5%, #032c4a 100%);
+    background:-webkit-linear-gradient(top, #0b72bc 5%, #032c4a 100%);
+    background:-o-linear-gradient(top, #0b72bc 5%, #032c4a 100%);
+    background:-ms-linear-gradient(top, #0b72bc 5%, #032c4a 100%);
+    background:linear-gradient(to bottom, #0b72bc 5%, #032c4a 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b72bc', endColorstr='#032c4a',GradientType=0);
+    background-color:#0b72bc;
+    display:inline-block;
+    cursor: pointer;
+    color:#ffffff;
+    padding:10px 25px;
+    font-size: 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3c6785;
+    border: none;
+  }
+  .blog-button > a > button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #032c4a), color-stop(1, #0b72bc));
+    background:-moz-linear-gradient(top, #032c4a 5%, #0b72bc 100%);
+    background:-webkit-linear-gradient(top, #032c4a 5%, #0b72bc 100%);
+    background:-o-linear-gradient(top, #032c4a 5%, #0b72bc 100%);
+    background:-ms-linear-gradient(top, #032c4a 5%, #0b72bc 100%);
+    background:linear-gradient(to bottom, #032c4a 5%, #0b72bc 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#032c4a', endColorstr='#0b72bc',GradientType=0);
+    background-color:#032c4a;
+  }
+  .blog-button > a > button:active {
+    position:relative;
+    top:1px;
+  }
+
+
+  
+  
+ 
