@@ -1,27 +1,35 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-//require('font-awesome/css/font-awesome.min.css'); 
-import ScrollUpButton from "react-scroll-up-button"
-import Header from "../components/header/Header"
-import Footer from "../components/Footer"
-import './index.scss'
-import '../assets/scss/main.scss'
 
-const Layout = ({ children }) => (
+import Header from '../components/Header'
+import './index.css'
+
+const TemplateWrapper = ({ children }) => (
   <div>
+    <Helmet
+      title="Dorian's Super Cool Gatsby Site"
+      meta={[
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
+      ]}
+    />
     <Header />
-    <ScrollUpButton />
-    <main style={{marginTop: '65px'}}>
-    {children()}
-    </main>
-    <Footer />
+    <div
+      style={{
+        margin: '0 auto',
+        maxWidth: 960,
+        padding: '0px 1.0875rem 1.45rem',
+        paddingTop: 0,
+      }}
+    >
+      {children()}
+    </div>
   </div>
 )
 
-Layout.propTypes = {
+TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
-export default Layout
-
+export default TemplateWrapper

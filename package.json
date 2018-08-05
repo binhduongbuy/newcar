@@ -1,44 +1,32 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "dorians-super-cool-gatsby-site",
+  "description": "Dorian's Super Cool Gatsby Site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dorian Dominguez <doriandevelops@gmail.com>",
   "dependencies": {
-    "bootstrap": "^4.1.1",
-    "css-loader": "^1.0.0",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-catch-links": "^1.0.24",
-    "gatsby-plugin-netlify-cms": "^2.0.1",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-remark-copy-linked-files": "^1.5.37",
-    "gatsby-remark-images": "^1.5.67",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "netlify-cms": "1.2.2",
-    "react-device-detect": "^1.5.9",
+    "gatsby": "^1.9.184",
+    "gatsby-link": "^1.6.36",
+    "gatsby-plugin-react-helmet": "^2.0.4",
+    "gatsby-plugin-styled-components": "^2.0.5",
+    "gatsby-source-hacker-news": "^1.0.9",
+    "gatsby-source-medium": "^1.0.11",
     "react-helmet": "^5.2.0",
-    "react-scroll-up-button": "^1.6.0",
-    "reactstrap": "^6.3.1"
+    "styled-components": "^3.1.6"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
+  "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "prettier": "^1.13.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.10.2"
   }
 }

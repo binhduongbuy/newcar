@@ -1,40 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "Dorian's Super Cool Gatsby Site",
   },
+  pathPrefix: `/dorians-super-cool-gatsby-site`,
   plugins: [
-    `gatsby-plugin-sass`,
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-catch-links',
+    'gatsby-plugin-styled-components',
+    'gatsby-source-hacker-news',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-medium`,
       options: {
-        path: `https://github.com/binhduongbuy/newcar/src/pages/blog`,
-        name: 'blog'
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `https://github.com/binhduongbuy/newcar/static/img`,
-        name: 'images',
+        username: `binhduongbuy@gmail.com`,
       },
     },
-    {
-      resolve: `gatsby-remark-images`,
-      options: {
-        maxWidth: 590,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `https://github.com/binhduongbuy/newcar/src/pages/news`,
-        name: 'news'
-      }
-    },
-    `gatsby-plugin-netlify-cms`,
-    'gatsby-transformer-remark',
-    'gatsby-remark-copy-linked-files'
   ],
-}
+};
