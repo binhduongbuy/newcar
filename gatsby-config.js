@@ -9,14 +9,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${github.com/binhduongbuy/newcar}/src/pages/blog`,
+        path: `github.com/binhduongbuy/newcar/src/pages/blog`,
         name: 'blog'
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${github.com/binhduongbuy/newcar}/static/img`,
+        path: `github.com/binhduongbuy/newcar/static/img`,
         name: 'images',
       },
     },
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${github.com/binhduongbuy/newcar}/src/pages/news`,
+        path: `github.com/binhduongbuy/newcar/src/pages/news`,
         name: 'news'
       }
     },
