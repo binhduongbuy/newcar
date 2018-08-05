@@ -1,0 +1,419 @@
+html {
+    height:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+    height:100%;
+}
+div#rezoName {
+    position:fixed;
+    float: left;
+    font-weight: 600;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 0 rgba(255, 0, 153, 0.31), -2px -2px 0 rgba(251, 255, 0, 0.54), 2px -2px 0 rgba(0, 255, 0, 0.58), -2px 2px 0 rgba(0, 255, 255, 0.59);
+}
+#textArea{
+    position: absolute;
+    z-index: 1;
+}
+#goodNews{
+	border-width: 5px;
+    border-color: white;
+    border-style: dashed;
+	visibility: hidden;
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+	top: -100px;
+	font-size: xx-large;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+#fakeclicktrigger{
+
+    position: relative;
+    z-index: 2;
+	cursor:pointer;
+}
+div.counter {
+	position: relative !important;
+
+	z-index:10;
+}
+.gardient {
+width: 100%;
+height: 1.2em;
+margin-top: 3px;
+}
+#menu{
+    z-index: 1;
+    float: right;
+    position: relative;
+    max-width: 100px;
+    /*height: 100%;*/
+}
+
+
+
+div#gradient {
+	z-index: 1;
+	float: right;
+	position: relative;
+	width: 15%;
+	max-width: 100px;
+	max-height: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display:none;
+}
+.bigBTN {
+    width:3em;
+    height:3em;
+    background-size:contain;
+    border-radius: 100px;
+    margin:0 auto;
+}
+#menuBtn{
+}
+.noRound {
+    border-radius:0!important;
+}
+.menuBtn {
+    background-image:url(../images/MENU.png);
+    width: 3em;
+}
+.whiteBackground {
+    background-color:white;
+}
+.menuBtn_replie{
+    height: 1.5em;
+    background-image:url(../images/MENU_REPLIE.png)!important;
+}
+#fastBulle {
+    background-image:url(../images/FAST.png);
+}
+#plusBulle {
+    background-image:url(../images/PLUS.png);
+}
+#drawBulle{
+    background-image:url(../images/pen.png);
+}
+#circleBulle{
+    background-image:url(../images/drawBulle.png);
+}
+#writeBulle{
+    background-image:url(../images/drawWrite.png);
+}
+#scriptToTypeBulle{
+    background-image:url(../images/scriptToType.png);
+}
+#supprDrawBulle{
+    background-image:url(../images/supprDraw.png);
+}
+#undoDrawBulle{
+    background-image:url(../images/undoDraw.png);
+}
+#editBulle{
+    background-image:url(../images/EDIT.png);
+}
+#linkBulle{
+    background-image:url(../images/LINK.png);
+}
+#link2Bulle{
+    background-image:url(../images/LINK2.png);
+}
+#link3Bulle{
+    background-image:url(../images/LINK3.png);
+}
+#textBulle{
+    background-image:url(../images/TEXT.png);
+}
+#scalBulle{
+    background-image:url(../images/SCAL.png);
+}
+#scalZPBulle{
+    background-image:url(../images/ZOOMTXTPLS.png);
+}
+#scalZMBulle{
+    background-image:url(../images/ZOOMTXTMNS.png);
+}
+#coloBulle{
+    background-image:url(../images/COLO.png);
+}
+#bordBulle{
+    background-image:url(../images/BORD.png);
+}
+#multBulle{
+    background-image:url(../images/MULT.png);
+}
+#selectBulle{
+    background-image:url(../images/SELECT.png);
+}
+#hyperBulle{
+    background-image:url(../images/HYPER.png);
+}
+
+#supprBulle{
+    background-image:url(../images/SUPPR.png);
+}
+#naviBulle {
+    background-image:url(../images/NAVI.png);
+}
+#zoomPBulle{
+    background-image:url(../images/ZOOMPLS.png);
+}
+#zoomMBulle{
+    background-image:url(../images/ZOOMMNS.png);
+}
+#zoomPText{
+    background-image:url(../images/ZOOMTXTPLS.png);
+}
+#zoomMText{
+    background-image:url(../images/ZOOMTXTMNS.png);
+}
+#fullBulle {
+    background-image:url(../images/FULL.png);
+}
+#driveBulle {
+    background-image:url(../images/drive.png);
+}
+
+#saveBulle {
+    background-image:url(../images/SAVE.png);
+}
+#homeBulle {
+    background-image:url(../images/HOME.png);
+}
+#localSaveBulle {
+    background-image:url(../images/LOCALSAVE.png);
+}
+#localHome {
+    background-image:url(../images/LOCALHOME.png);
+}
+#realtimeBulle {
+    background-image:url(../images/realtime.png)
+}
+div#drawing {
+    height: 3em;
+}
+.hiddenButton {
+    display:none;
+}
+.buttonOpened {
+    border-radius:100px;
+    background-color:white;
+}
+
+.drawingExpend {
+    margin-left: -15em;
+    width: 18em;
+}
+
+.drawBTN {
+    float: right;
+}
+
+.bigBTN img{
+	width:3em;
+	margin-top:2px;
+    height:3em
+}
+#menuContainer{
+	display:none;
+}
+img#editBulle {
+	background: none;
+	border-radius: 100px;
+}
+div#drawing {
+	background: rgba(255, 125, 0, 0.52);
+	border-radius: 100px;
+	border-style: dotted;
+	border-width: 5px;
+}
+div#editBackground {
+	background: rgba(6, 255, 0, 0.52);
+	border-radius: 100px;
+	border-style: dotted;
+	border-width: 5px;
+}
+img#naviBulle {
+	background: none;
+	border-radius: 100px;
+}
+div#navBackground {
+	background: rgba(255, 0, 232, 0.52);
+	border-radius: 100px;
+	border-style: dotted;
+	border-width: 5px;
+}
+#menu:hover {
+	cursor:pointer;
+}
+
+#open{
+display:none;
+margin: 5%;
+position: fixed;
+background: rgba(255,255,255,0.9);
+width: 90%;
+height: 85%;
+z-index: 2;
+box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+overflow: auto;
+
+}
+.orders {
+    margin-top: 0.5em;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.orderText {
+    margin-top: 0.3em;
+}
+.arrow {
+    cursor:pointer;
+    width: 1.5em;
+}
+.inOrder {
+    margin-left: 0.5em;
+    float: left;
+    float:left;
+}
+
+div#btnOpen {
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+.buttonOpen {
+    float: right;
+    width: 3em;
+    cursor: pointer;
+    overflow: auto;
+}
+img#closeOpen {
+    background: rgba(255, 0, 0, 0.29);  
+}
+img#driveOpen {
+    background: rgba(0, 255, 42, 0.29);
+}
+img#plusOpen {
+    background: rgba(0, 42, 255, 0.29);
+}
+div#openContainer {
+    margin-top: 2em;
+}
+.open {
+    font-family: arial;
+    margin: 0.5em;
+    font-size: 200%;
+    cursor:pointer;
+    float: left;
+    position: relative;
+    width: 80%;
+}
+.openSpan:hover {
+    text-shadow: 2px 2px 0 #ff0099,
+        -2px -2px 0 #fbff00,
+        2px -2px 0 lime,
+        -2px 2px 0 cyan;
+}
+img.openImgModif {
+margin-left: 2%;
+width: 40px;
+}
+
+img.openImgSuppr {
+margin-left: 2%;
+width: 40px;
+}
+
+div#loading {
+background-color: rgba(255, 255, 0, 0.9);
+height: 100%;
+z-index: 3;
+position: absolute;
+width: 100%;
+display: block; 
+}
+div#imgLoader {
+margin: 0 auto;
+width: 200px;
+font-family: arial;
+margin-top: 30%;
+}
+
+#canvasContainer{
+	float: left;
+	position: fixed;
+	top: 0;
+}
+@media only screen and (max-device-width: 400px) {
+	#menu{
+	width:10%;
+    }
+    .menuBtn {
+        width: 2em;
+    }
+    .menuBtn_replie {
+        height: 1em!important;
+    }
+    .bigBTN {
+        width:2em;
+        height:2em;
+    }
+    #drawing {
+	    border-width: 3px!important;
+        height:2em!important;
+    }
+    .drawingExpend {
+        width: 12em;
+        margin-left: -10em;
+    }
+  html {
+    max-width:400px
+  }
+  #canvasContainer
+  {
+    max-width:400px
+  }
+  div#editBackground {
+	border-width: 3px;
+	}
+  div#navBackground {
+	border-width: 3px;
+	}
+
+	#goodNews{
+	max-width: 200px;
+    font-size: x-large;
+	}
+    .buttonOpen {
+        width:2em;
+    }
+}
+#background{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+}
+#background-scale{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    background-position: 6% 5%!important;
+}
