@@ -14,7 +14,8 @@ recipe:
     1. 
 
 ---
-<h4>Victory at Brands Hatch sees 20-year-old Chadwick make history as the first woman to win a British F3 race<\h4>
+<h4> Victory at Brands Hatch sees 20-year-old Chadwick make history as the first woman to win a British F3 race </h4>
+
 Former British GT champion Jamie Chadwick secured her maiden BRDC British F3 win at Brands Hatch yesterday, becoming the first woman to take the chequered flag in the series’ near 70-year history.
 
 Starting from fourth on the grid, the 20-year-old Douglas Motorsport driver leapt to second before the first corner, slotting in behind Double R Racing’s Pavan Ravishankar.
