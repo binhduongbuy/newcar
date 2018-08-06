@@ -1,22 +1,22 @@
 # ----
 # Site
 
-title: Những Cây Trong Thiên Nhiên
+title: NEWS VEHICLE 2018
 url: "https://caythuocbamien.com"
 baseurl:
 google_analytics_key:
 newsletter_action:
 disqus_shortname:
 
-# Values for the jekyll-seo-tag gem (https://github.com/binhduongbuy/caythuocbamien)
+# Values for the jekyll-seo-tag gem (https://github.com/binhduongbuy/newcar)
 logo: /siteicon.png
-description:  Cây thuốc Ba Miền có rất nhiều, có rất nhiều những cây cỏ quanh ta có thể trị bệnh.
+description:  Car news and news around the world.
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Cây Thuốc 
+  name: NEWS
   links:
     - https://caythuocbamien.com
 
