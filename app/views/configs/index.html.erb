@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Configs</h1>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Particle access token</th>
+      <th>Keyword threshold<//th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @configs.each do |config| %>
+      <tr>
+        <td><%= config.scrubbed_particle_access_token %></td>
+	<td><%= config.threshold %></td>
+        <td><%= link_to 'Edit', edit_config_path(config) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
